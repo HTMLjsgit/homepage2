@@ -312,4 +312,25 @@ a{
     .twitterAsobisarchText{
         font-size: 25px;
     }
+
+}
+@media screen and (max-width: 370px){
+    .konText{
+        font-size: 20px;
+    }
+    .img{
+        height: 200px;
+    }
+    .hoverimage{
+        font-size: 15px;
+    }
+
+}
+@media screen and (max-width: 240px){
+    .konText{
+        font-size: 15px;
+    }
+    .passing-txt{
+        font-size: 15px;
+    }
 }
