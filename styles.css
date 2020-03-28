@@ -1,0 +1,315 @@
+
+body{
+    font-family: "Yu Mincho",YuMincho,"Hiragino Mincho ProN","Hiragino Mincho Pro","HGP明朝B",serif;
+    margin: 0;
+}
+.backgroundBox{
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    height: 100%;
+    width: 100%;
+    cursor:pointer;
+}
+.tyu{
+    color: #fff;
+    margin: 0;
+    background-color: #000;
+    opacity: 0.7;
+    padding-left: 1%;
+}
+.text{
+    margin: 0;
+    padding: 0;
+}
+.konText{
+    position: absolute;
+    z-index: 1;
+    background-color: rgba(0,0,0,0);
+    font-weight: bold;
+    color: #fff;
+    font-size: 40px;
+
+}
+.webBoxGO{
+    display: none;
+    transition: 0.4s;
+    transform: TranslateY(-100px);
+    margin: 0 auto;
+    max-width: 1000px;
+}
+.hoverimage{
+    color: #000;
+    background-color: #eee;
+    opacity: 0.8;
+    margin: 0;
+    text-align: center;
+}
+.qiitaBoxGO{
+    display: none;
+    transition: 0.4s;
+    transform: TranslateY(-100px);
+    text-align: center;
+}
+.twitterBoxGO{
+    display: none;
+    transition: 0.4s;
+    transform: TranslateY(-100px);
+    text-align: center;
+}
+.youtubeBoxGO{
+    display: none;
+    transition: 0.4s;
+    transform: TranslateY(-100px);
+    text-align: center;
+}
+.qiiteAsobisarchText{
+    opacity: 0.9;
+    transition: 1s;
+    color: #000;
+    margin: 0;
+    line-height: 100px;
+}
+.twitterAsobisarchText{
+    opacity: 0.9;
+    transition: 1s;
+    margin: 0;
+    color: #fff;
+    line-height: 100px;
+}
+.qiiteAsobisarchText:hover{
+    opacity: 1;
+    color: #000;
+}
+a{
+    text-decoration: none;
+    color: #000;
+}
+.kuroLifeBox{
+    opacity: 0.9;
+    background-color: #000;
+    height: 100px;
+}
+.kuroLifeText{
+    opacity: 0.9;
+    transition: 1s;
+    color: #000;
+    margin: 0;
+    line-height: 100px;
+}
+.kuroLifeText:hover{
+    opacity: 1;
+    color: #000;
+}
+.img{
+    height: 700px;
+    width: 100%;
+    opacity: 0.9;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    transition: opacity 0.5s ease;
+}
+.gameBoxGO{
+    display: none;
+    transition: 0.4s;
+    transform: TranslateY(-100px);
+    margin: 0 auto;
+    max-width: 1000px;
+}
+.img:hover{
+    opacity: 1;
+}
+
+.img::before{
+    background-color: rgba(0,0,0,0.4);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+.topBoxGO{
+    background-image: url("identweb.png");
+    height: 500px;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    line-height: 200px;
+}
+.topBoxGO::before{
+    background-color: rgba(0,0,0,0.4);
+    position: absolute;
+    top: 0px;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    content: ' ';
+}
+.backgroundBox::before{
+    background-color: rgba(0,0,0,0.5);
+    position: absolute;
+    top: 0px;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    content: ' ';
+}
+.backBox{
+    background-image: url("student-849825_1280.jpg");
+    background-size: cover;
+    background-position: center;
+
+}
+
+.content{
+  width: 100%;
+  height: 1px;
+  background: #333;
+}
+.border{
+    background: #fff;
+    height: 1px;
+    left: 0;
+    top: 0;
+    animation: anim 1s ease-out 0.5s forwards;
+}
+
+
+.noneBox{
+    display: none;
+}
+.webBox{
+
+}
+
+
+
+@-webkit-keyframes passing-bar{
+    0% {
+        left: 0;
+        right: auto;
+        width: 0;
+    }
+    50% {
+        left: 0;
+        right: auto;
+        width: 100%;
+    }
+    51% {
+        left: auto;
+        right: 0;
+        width: 100%;
+    }
+    100% {
+        left: auto;
+        right: 0;
+        width: 0;
+    }
+}
+@keyframes passing-bar{
+    0% {
+        left: 0;
+        width: 0;
+    }
+    50% {
+        left: 0;
+        width: 100%;
+    }
+    51% {
+        left: 0;
+        width: 100%;
+    }
+    100% {
+        left: 100%;
+        width: 0;
+    }
+}
+@-webkit-keyframes passing-txt{
+    0% { opacity: 0; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
+}
+@keyframes passing-txt{
+    0% { opacity:0; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+
+/* css */
+.passing .passing-box {
+    display: block;
+    text-align: center;
+}
+.passing .passing-bar {
+    position: relative;
+    display: inline-block;
+    /*　後ほど解説　*/
+    -webkit-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+}
+.passing .passing-bar:before {
+    content: '';
+    display: inline-block;
+    width: 0;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1;
+    /* 任意の値 */
+    background: #c0c0c0;
+    opacity: 0.5;
+}
+.passing .passing-txt {
+    opacity: 0;
+    /* 後ほど解説 */
+    -webkit-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    /* 任意の値 */
+    font-size: 3.0rem;
+    font-weight: bold;
+    line-height: 1.5;
+    color: #fff;
+}
+.passing.move .passing-bar:before {
+    -webkit-animation: passing-bar 1s ease 0s 1 normal forwards;
+    animation: passing-bar 1s ease 0s 1 normal forwards;
+}
+.passing.move .passing-txt {
+    -webkit-animation: passing-txt 0s ease .5s 1 normal forwards;
+    animation:passing-txt 0s ease .5s 1 normal forwards;
+}
+@keyframes anim {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}
+  @keyframes heightanim {
+  0% {
+    height: 0;
+  }
+  100% {
+    height: 100%;
+  }
+}
+@media screen and (max-width: 480px){
+    .konText{
+        font-size: 25px;
+    }
+    .img{
+        height: 200px;
+    }
+    .hoverimage{
+        font-size: 20px;
+    }
+    .twitterAsobisarchText{
+        font-size: 25px;
+    }
+}
